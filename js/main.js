@@ -219,18 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Typed effect on hero motto ---
   const motto = document.querySelector('.hero-motto');
   if (motto) {
-    const text = motto.textContent;
-    motto.textContent = '';
     motto.style.opacity = '1';
-    let i = 0;
-    function typeMotto() {
-      if (i < text.length) {
-        motto.textContent += text.charAt(i);
-        i++;
-        setTimeout(typeMotto, 30);
-      }
-    }
-    setTimeout(typeMotto, 1500);
   }
 
   // --- Navbar background blur enhancement ---

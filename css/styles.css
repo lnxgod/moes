@@ -832,8 +832,8 @@ h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
   gap: 15px;
 }
 
-.location-card:nth-child(1) .location-card-header { background: var(--korean-red); color: white; }
-.location-card:nth-child(2) .location-card-header { background: var(--korean-blue); color: white; }
+.location-card:nth-child(1) .location-card-header { background: var(--korean-blue); color: white; }
+.location-card:nth-child(2) .location-card-header { background: var(--korean-red); color: white; }
 .location-card:nth-child(3) .location-card-header { background: var(--black-primary); color: white; }
 
 .location-card-header .pin-icon {
@@ -845,6 +845,16 @@ h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  line-height: 1.15;
+}
+
+.location-card-header h3 span {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  font-family: var(--font-body);
+  font-weight: 700;
 }
 
 .location-card-body {
@@ -1127,6 +1137,12 @@ h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+}
+
+.contact-grid-single {
+  grid-template-columns: 1fr;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .contact-info h3 {
